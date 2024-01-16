@@ -16,7 +16,12 @@
             
             function equalButton(){
                try{
-                  result.value=eval(result.value);
+                  if(result.value==undefined)
+{
+result.value= 0;
+return;
+}
+ result.value=eval(result.value);
                }
                catch(error)
                {
