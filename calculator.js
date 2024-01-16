@@ -18,8 +18,8 @@
                try{
                   if(typeof result =='undefined')
 {
-result.value= 0;
-return;
+result.value= '0';
+
 }
  result.value=eval(result.value);
                }
