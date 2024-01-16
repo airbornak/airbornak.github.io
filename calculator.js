@@ -16,7 +16,7 @@
             
             function equalButton(){
                try{
-                  if(typeofresult =='undefined')
+                  if(typeof result =='undefined')
 {
 result.value= 0;
 return;
