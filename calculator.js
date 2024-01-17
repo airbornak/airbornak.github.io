@@ -23,7 +23,7 @@
                }
                else{
                   
-                  result.value=eval(result.value);
+                  result.value=eval((result.value).replace('÷','/').replace('×','*'));
                   
                }
                }
