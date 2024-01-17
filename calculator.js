@@ -5,7 +5,7 @@
             function displayButton(element){
                if(result.value === "ERROR")
                {
-               result.value =" ";
+               result.value =element;
               
                }
               
