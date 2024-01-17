@@ -1,13 +1,14 @@
-            let result = document.getElementById("resultDisplay");
-            result.value=" ";
+                        let result = document.getElementById("resultDisplay");
+            
             
             
             function displayButton(element){
                if(result.value === "ERROR")
                {
-               result.value =element;
+               result.value =" ";
               
                }
+              
                else{
                      result.value +=element;
               
@@ -16,12 +17,15 @@
             
             function equalButton(){
                try{
-                  if(typeof result =='undefined')
-{
-result.value= '0';
-
-}
- result.value=eval(result.value);
+                 if(result.value.length===0)
+                  {
+                  result.value ="";
+               }
+               else{
+                  
+                  result.value=eval(result.value);
+                  
+               }
                }
                catch(error)
                {
@@ -33,11 +37,12 @@ result.value= '0';
             }
             function deleteAll(){
               
-               result.value = " ";
+               result.value = "";
              
             }
+            
             function deleteLast(){
                
                result.value= result.value.slice(0,-1);
             }
-            
+     
